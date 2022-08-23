@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="logo">
+        <div class="contenido-logo">
+            <img src="imagenes/logo.png" alt="Logo" id="imagen-logo">
+        </div>
+    </section>
+
+    <section class="campo-texto">
+        <div class="contenido-campo-texto">
+            <textarea type="text" cols="40" rows="6" id="texto-a-encriptar" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="solo-minusculas">
+                <img src="imagenes/vector.png" alt="Signo de exclamación">
+                <p id="texto-solo-minusculas">Solo letras minúsculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="texto-encriptado">
+        <div class="contenido-ningun-mensaje">
+            <nav class="contenido">
+                <img src="imagenes/muneco.png" alt="Muñeco">
+                <h2 id="ningun-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </nav>
+        </div>    
+        <div id="contenido-mensaje" class="invisible">
+            <textarea class="mensaje-encriptado" id="mensaje-encriptado" cols="18" ></textarea>
+            <button class="boton-copiar" onclick="copiar()">Copiar</button>
+        </div> 
+        
+    </section>
+
+    <footer>
+        <div class="flexbox">
+	    <p class="copyright">&copy Copyright Selene Curcio - 2022</p>
+        </div>
+    </footer>
+
+    <script src="encriptar.js"></script>
+    <script src="desencriptar.js"></script>
+    <script src="copiar.js"></script>
+
+</body>
+</html>
+
